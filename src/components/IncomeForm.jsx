@@ -370,7 +370,7 @@ function IncomeForm({ onSubmit, editingRecord, onCancelEdit, users = [], default
                         {/* Сумма */}
                         <div className="form-group">
                             <label className="form-label" htmlFor="income-amount">
-                                {isMultiExecutor ? `${t('amount')} (Итого)` : `${t('amount')} (₾)`}
+                                {isMultiExecutor ? `${t('amount')} (Итого)` : `${t('amount')} (BYN)`}
                             </label>
                             <div className="input-with-icon">
                                 <Icons.Money size={20} className="input-icon" />

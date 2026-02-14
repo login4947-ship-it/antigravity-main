@@ -381,7 +381,7 @@ export async function exportToPdf(records, options = {}, users = []) {
             const amount = getRecordAmount(record);
             return [
                 formatDate(record.date),
-                formatCurrency(amount).replace('₾', 'GEL').replace(/\u00A0/g, ' '),
+                formatCurrency(amount).replace(/\u00A0/g, ' '),
                 record.carBrand || '—',
                 getWorkTypeNameForReport(record.workType),
                 getExecutorNamesForReport(record.executors, users),
@@ -391,7 +391,7 @@ export async function exportToPdf(records, options = {}, users = []) {
 
         // Итоговая сумма
         const total = records.reduce((sum, r) => sum + getRecordAmount(r), 0);
-        const formattedTotal = formatCurrency(total).replace('₾', 'GEL').replace(/\u00A0/g, ' ');
+        const formattedTotal = formatCurrency(total).replace(/\u00A0/g, ' ');
 
         // Генерация таблицы
         autoTable(doc, {

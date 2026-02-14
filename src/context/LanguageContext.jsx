@@ -56,7 +56,7 @@ export const TRANSLATIONS = {
         statsDailyAvg: 'В среднем в день',
         statsTotal: 'Всего за период',
         statsBestDay: 'Самый прибыльный день',
-        statsCurrency: '₾',
+        statsCurrency: 'BYN',
 
         // Filters
         chartTitle: 'График доходов',
@@ -138,149 +138,15 @@ export const TRANSLATIONS = {
         month9: 'Сентябрь', month10: 'Октябрь', month11: 'Ноябрь', month12: 'Декабрь'
 
     },
-    ge: {
-        // Common
-        appTitle: 'შემოსავლების აღრიცხვა',
-        export: 'ექსპორტი',
-        logout: 'გასვლა',
-        adminPanel: 'ადმინ-პანელი',
-        viewMode: 'ნახვა',
-        theme: 'თემა',
-        language: 'ენა',
-        save: 'შენახვა',
-        cancel: 'გაუქმება',
-        delete: 'წაშლა',
-        edit: 'შეცვლა',
-        add: 'დამატება',
-        loading: 'იტვირთება...',
-        actions: 'მოქმედებები',
-        search: 'ძებნა...',
-
-        // Income Form
-        newRecord: 'ახალი ჩანაწერი',
-        editRecord: 'რედაქტირება',
-        amount: 'თანხა',
-        workType: 'სამუშაოს ტიპი',
-        executors: 'შემსრულებლები',
-        comment: 'კომენტარი',
-        date: 'თარიღი',
-        carBrand: 'ავტომობილის მარკა',
-        vin: 'VIN',
-        placeholderAmount: '0.00',
-        placeholderCarBrand: 'მაგ. Toyota Camry',
-        placeholderVin: '17-ნიშნა ნომერი',
-        placeholderComment: 'დამატებითი დეტალები...',
-        placeholderExecutors: 'აირჩიეთ შემსრულებლები...',
-        placeholderWorkType: 'აირჩიეთ სამუშაოს ტიპი...',
-
-        // Table
-        incomeList: 'შემოსავლების სია',
-        tableEmpty: 'ჩანაწერები არ არის',
-        tableEmptySub: 'დაამატეთ პირველი ჩანაწერი',
-        tableDate: 'თარიღი',
-        tableAmount: 'თანხა',
-        tableWorkType: 'სამუშაოს ტიპი',
-        tableExecutors: 'შემსრულებლები',
-        tableComment: 'კომენტარი',
-        tableActions: 'მოქმედებები',
-        confirmDelete: 'წავშალოთ ჩანაწერი?',
-
-        // Statistics
-        statsTitle: 'სტატისტიკა',
-        statsMonthRecord: 'თვის რეკორდი',
-        statsDailyAvg: 'საშუალო დღეში',
-        statsTotal: 'ჯამი პერიოდისთვის',
-        statsBestDay: 'ყველაზე შემოსავლიანი დღე',
-        statsCurrency: '₾',
-
-        // Filters
-        chartTitle: 'შემოსავლების გრაფიკი',
-        filterTitle: 'ფილტრები',
-        filterMonth: 'თვე',
-        filterDay: 'დღე',
-        filterExecutor: 'თანამშრომელი',
-        filterAllMonths: 'ყველა თვე',
-        filterAllDays: 'ყველა დღე',
-        filterAllExecutors: 'ყველა',
-        daySuffix: 'რიცხვი',
-        filterReset: 'გასუფთავება',
-
-        // Work Types
-        typeDiagnostics: 'დიაგნოსტიკა',
-        typeMaintenance: 'ტექ. დათვალიერება',
-        typeSuspension: 'სავალი ნაწილი',
-        typeEngine: 'ძრავი',
-        typeBrakes: 'სამუხრუჭე სისტემა',
-        typeElectrical: 'ელექტროობა',
-        typeAirConditioning: 'კონდიციონერი',
-        typeHeating: 'გათბობა',
-        typeChipTuning: 'ჩიპ-ტიუნინგი',
-        typeBlockRepair: 'ბლოკის რემონტი',
-        typeProgrammingCoding: 'პროგრამირება და კოდირება',
-        typeAtRepair: 'ავტომატური ტრანსმისიის რემონტი',
-        typeOther: 'სხვა',
-
-        // Auth
-        loginTitle: 'სისტემაში შესვლა',
-        loginSub: 'შეიყვანეთ მონაცემები წვდომისთვის',
-        loginUsername: 'თქვენი ლოგინი',
-        loginPassword: 'თქვენი პაროლი',
-        loginSubmit: 'შესვლა',
-        loginError: 'ლოგინი ან პაროლი არასწორია',
-        loginLegacyHint: 'სტანდარტული: admin / 1234',
-
-        // Cloud Sync
-        syncTitle: 'მონაცემთა გაცვლა',
-        syncUrlLabel: 'Google Script-ის URL',
-        syncHint: 'სინქრონიზაცია ღრუბლოვან ბაზასთან',
-        syncSaveBtn: 'ჩანაწერები',
-        syncLoadBtn: 'ჩამოტვირთვა',
-        syncUsersBtn: 'Users ფურცლის ინიციალიზაცია',
-        syncSuccess: 'მონაცემები წარმატებით შესრულდა',
-        syncError: 'სინქრონიზაციის შეცდომა',
-        syncConfirmLoad: 'ეს შეცვლის ლოკალურ მონაცემებს. გავაგრძელოთ?',
-
-        // User management
-        usersTitle: 'მომხმარებლების მართვა',
-        usersList: 'სია',
-        usersAddUser: 'მომხმარებლის დამატება',
-        usersEditUser: 'რედაქტირება',
-        usersUsername: 'ლოგინი',
-        usersPassword: 'პაროლი',
-        usersFullName: 'სრული სახელი',
-        usersRole: 'როლი',
-        usersRoleAdmin: 'ადმინისტრატორი',
-        usersRoleEmployee: 'თანამშრომელი',
-        usersSyncCloud: 'ღრუბელში შენახვა',
-        usersConfirmDelete: 'წავშალოთ მომხმარებელი?',
-
-        // Roles
-        roleAdmin: 'ადმინი',
-        roleEmployee: 'თანამშრომელი',
-        exportPeriodTitle: 'ექსპორტის პარამეტრები',
-        exportDateFrom: 'თარიღიდან',
-        exportDateTo: 'თარიღამდე',
-        exportMonthBtn: 'ექსპორტი მიმდინარე თვისთვის',
-        exportAllBtn: 'ყველა მონაცემის ექსპორტი',
-        exportRangeBtn: 'ექსპორტი არჩეული პერიოდისთვის',
-        exportFormat: 'ფაილის ფორმატი',
-        formatTxt: 'ტექსტური ფაილი (.txt)',
-        formatPdf: 'PDF დოკუმენტი (.pdf)',
-
-        // Months (Georgian)
-        month1: 'იანვარი', month2: 'თებერვალი', month3: 'მარტი', month4: 'აპრილი',
-        month5: 'მაისი', month6: 'ივნისი', month7: 'ივლისი', month8: 'აგვისტო',
-        month9: 'სექტემბერი', month10: 'ოქტომბერი', month11: 'ნოემბერი', month12: 'დეკემბერი'
-
-    }
 };
 
 export const LanguageProvider = ({ children }) => {
     const [lang, setLang] = useState(() => {
         try {
-            return typeof window !== 'undefined' && window.localStorage
+            const stored = typeof window !== 'undefined' && window.localStorage
                 ? (window.localStorage.getItem('autoservice-lang') || 'ru')
                 : 'ru';
+            return stored === 'ge' ? 'ru' : stored;
         } catch (e) {
             return 'ru';
         }
@@ -297,7 +163,8 @@ export const LanguageProvider = ({ children }) => {
 
     const t = (key) => {
         if (!key) return '';
-        const tr = TRANSLATIONS[lang] || TRANSLATIONS['ru'];
+        const langKey = lang === 'ge' ? 'ru' : (lang || 'ru');
+        const tr = TRANSLATIONS[langKey] || TRANSLATIONS['ru'];
         return (tr && tr[key]) || (TRANSLATIONS['ru'] && TRANSLATIONS['ru'][key]) || key;
     };
 

@@ -11,14 +11,14 @@ export function formatCurrency(amount, showCurrency = true) {
         return str;
     }
     if (str === '' || isNaN(num)) {
-        return showCurrency ? '0 ₾' : '0';
+        return showCurrency ? '0 BYN' : '0';
     }
     const formatted = new Intl.NumberFormat('ru-RU', {
         style: 'decimal',
         minimumFractionDigits: 0,
         maximumFractionDigits: 0
     }).format(num);
-    return showCurrency ? `${formatted} ₾` : formatted;
+    return showCurrency ? `${formatted} BYN` : formatted;
 }
 
 /**
